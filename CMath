@@ -1,0 +1,152 @@
+#include <iostream>
+#include <cmath>
+
+double const PI = (atan(1) * 4);
+
+// Simple interest formula
+double simpInterest(double p, double r, double t) {
+	double i = p * r * t;
+	return i;
+}
+
+// Perimeter triangle
+double perimTri(double a, double b, double c) {
+	double p = a + b + c;
+	return p;
+}
+
+// Perimeter rectangle
+double perimRect(double L, double W) {
+	double p = 2 * (L + W);
+	return p;
+}
+
+// Circumference circle
+double circumCircle(double d) { // LOL
+	double c = PI * d;
+	return c;
+}
+
+// Area rectangle
+double areaRect(double l, double w) {
+	double a = l * w;
+	return a;
+}
+
+// Area parallelogram
+double areaParallel(double b, double h) {
+	double a = b * h;
+	return a;
+}
+
+// Area triangle
+double areaTri(double b, double h) {
+	double a = b * h / 2.0;
+	return a;
+}
+
+// Area trapezoid
+double trapAreaLOL(double b, double h) {
+	double a = ((b + (b * b)) / 2.0) * h;
+	return a;
+}
+
+// Area circle
+double areaCircle(double r) {
+	double a = PI * (r * r);
+	return a;
+}
+
+// Volume rectangular prism
+double rectPrism(double l, double w, double h) {
+	double v = (l * w) * h;
+	return v;
+}
+
+// Pythagorean Theorem
+double pagTher(double a, double b) {
+	double c = (a * a) + (b * b);
+	c = c * c;
+	return c;
+}
+
+// Distance Formula
+double distForm(double r, double t) {
+	double d = r * t;
+	   // LOL
+	return d;
+}
+
+// Direct Variation
+double directVar(double k, double x) {
+	double y = k * x;
+	return y;
+}
+
+// Inverse variation
+double inverseVar(double k, double x) {
+	double y = k / x;
+	return y;
+}
+
+// Vertex Formula
+double vertexForm(double a, double b) {
+	double f = (b * -1) / 2 * a * (b * -1) / 2 * a;
+	return f;
+}
+
+// Slope formula
+double slopeForm(double x, double y) {
+	double m = (y * y) - y / (x * x) - x;
+	return m;
+}
+
+// Slope intercept of equation
+double slopeIntercept(double m, double x, double b) {
+	double y = (m * x) + b;
+	return y;
+}
+
+// Point slope of equation
+double pointSlope(double m, double x) {
+	double y = m * (x - (x * x));
+	y = y - y;
+	return y;
+}
+
+// Standard equation form
+double stanEquation(double a, double b, double x, double y) {
+	double c = (a * x) + (b * y);
+	return c;
+}
+
+// I wish I were high on pot enuse
+double hypotRightTri(double a, double b) {
+	double c = sqrt(a * a + b * b);
+	return c;
+}
+
+
+
+int main() {
+	std::cout << simpInterest(2, 2, 2) << std::endl;
+	std::cout << perimTri(2, 2, 2) << std::endl;
+	std::cout << perimRect(2, 2) << std::endl;
+	std::cout << circumCircle(2) << std::endl;
+	std::cout << areaRect(2, 2) << std::endl;
+	std::cout << areaParallel(2, 2) << std::endl;
+	std::cout << areaTri(2, 2) << std::endl;
+	std::cout << trapAreaLOL(2, 2) << std::endl;
+	std::cout << areaCircle(2) << std::endl;
+	std::cout << rectPrism(2, 2, 2) << std::endl;
+	std::cout << pagTher(2, 2) << std::endl;
+	std::cout << distForm(2, 2) << std::endl;
+	std::cout << directVar(2, 2) << std::endl;
+	std::cout << inverseVar(2, 2) << std::endl;
+	std::cout << vertexForm(2, 2) << std::endl;
+	std::cout << slopeForm(2, 2) << std::endl;
+	std::cout << slopeIntercept(2, 2, 2) << std::endl;
+	std::cout << pointSlope(2, 2) << std::endl;
+	std::cout << stanEquation(2, 2, 2, 2) << std::endl;
+	std::cout << hypotRightTri(10, 10) << std::endl;
+}
